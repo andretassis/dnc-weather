@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>DNC - Weather</title>
+</head>
+
+<body>
+    <header>
+        <h1>DncWeather</h1>
+        <ul>
+            <li>Endereços</li>
+            <li>Previsão do tempo</li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner__text">
+                <p>Descubra Mais com Precisão: Previsões do Tempo e endereços em tempo real.</p>
+            </div>
+
+            <div>
+                <img class="banner__img" src="./assets/clima-banner.svg" alt="Sol entre nuvens">
+            </div>
+        </section>
+
+
+
+        <form>
+            <label>Primeiro Nome:</label>
+            <input class="form__text" type="text" placeholder="Insira seu primeiro nome">
+            <label>E-mail:</label>
+            <input class="form__text" type="email" placeholder="Insira seu e-mail">
+            <label>Digite o CEP:</label>
+            <input class="form__text" type="number" placeholder="Insira o CEP">
+            <label>Digite a latitude e longitude para saber a previsão:</label>
+            <div>
+                <input class="form__latlong" type="number" placeholder="Latitude">
+                <input type="number" placeholder="Longitude">
+            </div>
+
+
+            <button>Acessar</button>
+
+        </form>
+
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
