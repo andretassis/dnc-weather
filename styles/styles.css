@@ -154,3 +154,14 @@ button:hover {
     font-size: 15px;
     font-weight: 700;
 }
+
+footer {
+    background-color: #0C70F2;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+    align-items: center;
+    padding: 1em 5em;
+    margin-top: 100px;
+}
