@@ -31,8 +31,6 @@
             </div>
         </section>
 
-
-
         <form>
             <label>Primeiro Nome:</label>
             <input class="form__text" type="text" placeholder="Insira seu primeiro nome">
@@ -45,12 +43,40 @@
                 <input class="form__latlong" type="number" placeholder="Latitude">
                 <input type="number" placeholder="Longitude">
             </div>
-
-
             <button>Acessar</button>
-
         </form>
 
+        <section>
+            <div class="container__result">
+                <h2>Resultado da busca por CEP:</h2>
+                <img src="./assets/cep.svg" alt="Pin de localização">
+            </div>
+
+            <div class="result-cep">
+
+                <ul class="result-cep-cabecalho">
+                    <li>Logradouro</li>
+                    <li>Bairro/Distrito</li>
+                    <li>Localidade/UF</li>
+                </ul>
+                <ul class="result-cep-info">
+                    <li>Nome da rua</li>
+                    <li>Nome do bairro</li>
+                    <li>UF</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="container__result">
+                <h2>Previsão do tempo na região:</h2>
+                <img src="./assets/clima.svg" alt="Nuvens">
+            </div>
+
+            <div class="result-climate">
+                <p>Previsão do tempo de acordo com a região: 00°C</p>
+            </div>
+        </section>
 
     </main>
 

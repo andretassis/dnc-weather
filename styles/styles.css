@@ -59,7 +59,7 @@ form {
     background-color: #fff;
     width: 20vw;
     padding: 4em 3em;
-    margin: 10em 0;
+    margin: 10em 0 5em 0;
     border-radius: 30px;
 }
 
@@ -107,4 +107,50 @@ button:hover {
     background-color: rgba(12, 112, 242, 0.55);
     transition: 0.2s;
     transform: translateY(-4px);
+}
+
+.container__result {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.container__result img {
+    width: 100px;
+}
+
+.result-climate {
+    background-color: #fff;
+    font-weight: 700;
+    padding: 0.6em 6em;
+    border: 1px solid #0C70F2;
+    border-radius: 20px;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.result-cep {
+    background-color: #fff;
+    margin: 20px 0 80px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.result-cep-cabecalho {
+    background-color: #0C70F2;
+    color: #fff;
+    padding: 0.6em 4em;
+    font-size: 15px;
+    font-weight: 700;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.result-cep-info {
+    border-radius: 30px;
+    padding: 0.6em 4em;
+    font-size: 15px;
+    font-weight: 700;
 }
