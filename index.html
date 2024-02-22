@@ -31,19 +31,19 @@
             </div>
         </section>
 
-        <form>
+        <form id="form">
             <label>Primeiro Nome:</label>
             <input class="form__text" type="text" placeholder="Insira seu primeiro nome">
             <label>E-mail:</label>
             <input class="form__text" type="email" placeholder="Insira seu e-mail">
-            <label>Digite o CEP:</label>
-            <input class="form__text" type="number" placeholder="Insira o CEP">
+            <label name="cep">Digite o CEP:</label>
+            <input for="cep" id="cep" class="form__text" type="number" placeholder="Insira o CEP">
             <label>Digite a latitude e longitude para saber a previsão:</label>
             <div>
                 <input class="form__latlong" type="number" placeholder="Latitude">
                 <input type="number" placeholder="Longitude">
             </div>
-            <button>Acessar</button>
+            <button onclick='buscarCep()'>Acessar</button>
         </form>
 
         <section>
@@ -60,9 +60,9 @@
                     <li>Localidade/UF</li>
                 </ul>
                 <ul class="result-cep-info">
-                    <li>Nome da rua</li>
-                    <li>Nome do bairro</li>
-                    <li>UF</li>
+                    <li id="logradouro"></li>
+                    <li id="bairro"></li>
+                    <li id="uf"></li>
                 </ul>
             </div>
         </section>
@@ -87,7 +87,9 @@
     </footer>
 
 
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cep.js"></script>
+    <script src="js/clima.js"></script>
 </body>
 
 </html>
