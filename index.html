@@ -33,17 +33,19 @@
 
         <form id="form">
             <label>Primeiro Nome:</label>
-            <input class="form__text" type="text" placeholder="Insira seu primeiro nome" required>
+            <input class="form__text" type="text" placeholder="Insira seu primeiro nome" minlength="3" required>
             <label>E-mail:</label>
-            <input class="form__text" type="email" placeholder="Insira seu e-mail" required>
+            <input class="form__text" type="email" placeholder="Insira seu e-mail" minlength="3" required>
             <label name="cep">Digite o CEP:</label>
             <input for="cep" id="cep" class="form__text" type="number" placeholder="Insira o CEP" required>
             <label>Digite a latitude e longitude para saber a previsão:</label>
             <div>
-                <input id='lat' class="form__latlong" type="text" placeholder="Latitude" required>
-                <input id='long' class="form__latlong" type="text" placeholder="Longitude" required>
+                <input id='lat' class="form__latlong" type="text" placeholder="Latitude" minlength="5" maxlength="6"
+                    required>
+                <input id='long' class="form__latlong" type="text" placeholder="Longitude" minlength="5" maxlength="6"
+                    required>
             </div>
-            <button onclick='weatherInfo()'>Acessar</button>
+            <button onclick='buscarCep(); weatherInfo()'>Acessar</button>
         </form>
 
         <section>
@@ -74,7 +76,7 @@
             </div>
 
             <div class="result-climate">
-                <p id="weather-result">Previsão do tempo de acordo com a região: 00°C</p>
+                <p id="weather-result"></p>
             </div>
         </section>
     </main>
@@ -88,6 +90,7 @@
 
 
     <script src="js/index.js"></script>
+    <script src="js/validacao.js"></script>
     <script src="js/cep.js"></script>
     <script src="js/clima.js"></script>
 </body>

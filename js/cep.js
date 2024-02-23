@@ -11,6 +11,7 @@ async function buscarCep() {
         logradouro.innerText = data.logradouro
         bairro.innerText = data.bairro
         uf.innerText = data.uf
+
     }
 
     catch (error) {
