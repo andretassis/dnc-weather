@@ -33,15 +33,15 @@
 
         <form id="form">
             <label>Primeiro Nome:</label>
-            <input class="form__text" type="text" placeholder="Insira seu primeiro nome">
+            <input class="form__text" type="text" placeholder="Insira seu primeiro nome" required>
             <label>E-mail:</label>
-            <input class="form__text" type="email" placeholder="Insira seu e-mail">
+            <input class="form__text" type="email" placeholder="Insira seu e-mail" required>
             <label name="cep">Digite o CEP:</label>
-            <input for="cep" id="cep" class="form__text" type="number" placeholder="Insira o CEP">
+            <input for="cep" id="cep" class="form__text" type="number" placeholder="Insira o CEP" required>
             <label>Digite a latitude e longitude para saber a previsão:</label>
             <div>
-                <input id='lat' class="form__latlong" type="text" placeholder="Latitude">
-                <input id='long' type="text" placeholder="Longitude">
+                <input id='lat' class="form__latlong" type="text" placeholder="Latitude" required>
+                <input id='long' class="form__latlong" type="text" placeholder="Longitude" required>
             </div>
             <button onclick='weatherInfo()'>Acessar</button>
         </form>
